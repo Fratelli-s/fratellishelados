@@ -123,9 +123,20 @@ h3 {
   transform: translate(-50%, -50%);
   justify-content: center;
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .carousel-caption h5 {
   color: #b4945c;
   font-size: 70px;
+  animation: slideUp 1s ease-in-out;
 }
 
 .flavors-section {
