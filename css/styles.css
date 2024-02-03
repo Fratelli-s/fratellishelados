@@ -1,0 +1,186 @@
+body {
+  font-family: "Oswald", sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.nav-link {
+  color: #b4945c;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: #664e4c;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-logo {
+  width: 70px;
+  height: auto;
+}
+
+.order-btn {
+  padding: 10px 30px;
+  border: 1px solid #b4945c;
+  color: #b4945c;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.order-btn:hover {
+  background-color: #b4945c;
+  color: white;
+  text-decoration: none;
+}
+
+.ice-cream-container {
+  position: relative;
+  text-align: center;
+}
+
+.ice-cream-heading {
+  position: absolute;
+  top: 50%;
+  color: #b4945c; /* Assuming you want the text in white to stand out over the image */
+  z-index: 2; /* Ensures the heading is above the image */
+  width: 100%; /* Ensures the text is centered within the container */
+  font-size: 70px;
+}
+
+.ice-cream-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1; /* Ensures the image stays behind the text */
+}
+
+.top-bar {
+  background-color: #b4945c; /* Adjust the color to match your design */
+  color: white;
+}
+
+.top-bar .top-bar-contact,
+.top-bar .top-bar-social {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.top-bar .top-bar-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar .top-bar-social a:hover {
+  color: #664e4c; /* Slightly darken the icon on hover */
+}
+
+.top-bar-container {
+  padding: 7px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  background-color: #b4945c; /* Adjust the color to match your design */
+}
+.carousel-item {
+  height: 873px;
+  background-color: #000; /* Fallback color */
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 873px;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+.carousel-caption h5 {
+  color: #b4945c;
+  font-size: 70px;
+}
+
+.flavors-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffe5d9; /* Light peach background, adjust as needed */
+}
+
+.flavors-menu {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.flavors-image {
+  flex-basis: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.flavors-menu h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  font-family: 'Silverstar', sans-serif;
+                                                
+
+}
+
+.flavors-menu:hover h2 {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.flavor-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.flavor-item p {
+  margin-bottom: 0;
+}
+
+.flavor-item:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: black;
+  transition: width 0.5s ease-in-out;
+  width: 0;
+}
+
+.flavor-item:hover:after {
+  width: 100%;
+}
+
+.view-more {
+  text-align: center;
+  margin-top: 30px;
+}
