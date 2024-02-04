@@ -514,6 +514,20 @@ cite {
   }
 }
 
+.ice-cream-image-edited {
+  background-size: cover; /* Cover the entire div without stretching the image */
+  background-position: center; /* Center the background image */
+  min-height: 720px; /* Minimum height to ensure visibility on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .ice-cream-image-edited {
+    min-height: 500px; /* Adjust based on your design needs */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 .title {
   font-size: 3rem; /* Adjust based on actual size needed */
   font-weight: bold;
