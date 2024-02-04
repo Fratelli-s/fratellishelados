@@ -187,35 +187,59 @@
           <div class="flavors-menu">
             <h2 class="text-center" data-aos="fade-left">helados</h2>
             <h3 class="text-center mb-5">Nuestros sabores</h3>
-            <div class="flavor-container">
-              <div class="flavor-item">
-                <p>Chocolate</p>
-                <p>Nuez</p>
+            <div class="flavor-container row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Chocolate</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Vainilla</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Queso Cereza</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Limón</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Galleta</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Tutti Frutti</p>
+                </div>
+                <div class="flavor-item-edited">
+                  <p class="text-center text-md-left flavor-item-p-edited">Menta</p>
+                </div>
               </div>
-              <div class="flavor-item">
-                <p>Vainilla</p>
-                <p>Rompope</p>
-              </div>
-              <div class="flavor-item">
-                <p>Queso Cereza</p>
-                <p>Taro</p>
-              </div>
-              <div class="flavor-item">
-                <p>Limón</p>
-                <p>Fresa</p>
-              </div>
-              <div class="flavor-item">
-                <p>Galleta</p>
-                <p>Ron con Pasas</p>
-              </div>
-
-              <div class="flavor-item">
-                <p>Tutti Frutti</p>
-                <p>Café</p>
-              </div>
-              <div class="flavor-item">
-                <p>Menta</p>
-                <p>Nutella</p>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Nuez</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Rompope</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Taro</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Fresa</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Ron con Pasas</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Café</p>
+                </div>
+                <div class="" style="justify-content: space-between;
+                margin-bottom: 10px;">
+                  <p class="text-center text-md-right flavor-item-p-edited" >Nutella</p>
+                </div>
               </div>
             </div>
             <div class="view-more">
@@ -410,7 +434,7 @@
           <div class="flavors-menu">
             <h2 class="text-center" data-aos="fade-left">catering</h2>
             <h3 class="text-center mb-5">Fratelli's en tus eventos</h3>
-            <div class="flavor-container" style="padding-top: 0px">
+            <div class="flavor-container-edited-1" style="padding-top: 0px">
               <p style="text-align: justify">
                 Fratelli's Eventos lleva la magia de nuestros exquisitos helados
                 y café gourmet directamente a tu celebración. Nuestro servicio
@@ -445,7 +469,7 @@
           <div class="flavors-menu">
             <h2 class="text-center" data-aos="fade-right">contactános</h2>
             <h3 class="text-center mb-5">Escríbenos todas tus dudas</h3>
-            <div class="flavor-container" style="padding-top: 0px">
+            <div class="flavor-container-edited-1" style="padding-top: 0px">
               <p style="text-align: justify">
                 En Fratelli's Helados, tu satisfacción es nuestra prioridad.
                 Para preguntas, asesoramiento para eventos o compartir tu
@@ -454,7 +478,7 @@
             </div>
 
             <!-- Contact Form -->
-            <form id="contact-form">
+            <form id="contact-form" method="post">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input
@@ -486,9 +510,27 @@
                 ></textarea>
               </div>
               <div class="view-more">
-                <button type="submit" class="order-btn">Enviar mensaje</button>
+                <button type="submit" class="order-btn" onclick="sendEmailContacForm()">Enviar mensaje</button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+                <!-- Modal HTML -->
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+          </div>
+          <div class="modal-body">
+            <!-- El mensaje de éxito se insertará aquí -->
+          </div>
+          <div class="modal-footer">
           </div>
         </div>
       </div>
@@ -674,8 +716,85 @@
       });
     </script>
 
+<script>
+  function sendEmailContacForm() {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const correo = document.getElementById("correo").value;
+      const mensaje = document.getElementById("mensaje").value;
+
+      // Estilos CSS en línea
+      const style = `
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background-color: #b4945c;
+          font-family: Arial, sans-serif;
+          background-color: #b4945c;
+          color: white;
+          text-align: center;
+      `
+      const thstyle = `
+          background-color: #EF502E;
+          color: white;
+          font-weight: bold;
+          padding: 8px;
+          text-align: left;
+      `
+
+      const tdstyle = `
+          border: 1px solid #ccc;
+          padding: 8px;
+      `
+
+      const btnstyle = `
+          display: inline-block;
+          background-color: #b4945c;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          border-radius: 4px;
+          margin-top: 20px;
+          font-weight: bold;
+      `
+
+      Email.send({
+          SecureToken: "0f0ecf8b-8735-47e9-99d8-fac0323d1bfa",
+          To: 'sof.db@outlook.com',
+          From: "amoxtlidev@gmail.com",
+          Subject: "Contacto",
+          Body: `
+              <div>
+                <img src="https://fratellishelados.netlify.app/images/logo/logo.png" alt="Imagen" style="display: block; margin-left: auto; margin-right: auto; width: 50%; padding-bottom: 10px;" />
+              </div>
+              <div style="${style}">
+                  <h3 style="color: #ffffff;">Nuevo contacto</h3>
+              </div>
+              <div>
+                  <h3 style="color: #b4945c;">Datos del cliente</h3>
+                  <p style="color: black;"><strong style="color: black;">Nombre:</strong> ${nombre}</p>
+                  <p style="color: black;"><strong style="color: black;">Correo electrónico:</strong> ${correo}</p>
+                  <p style="color: black;"><strong style="color: black;">Mensaje:</strong> ${mensaje}</p>
+              </div>
+              <a style="${btnstyle}" href="mailto:${correo}?subject=Respuesta%20contacto%20-%20${nombre}&body=Estimado%20Cliente,%0D%0A%0D%0ANos%20ponemos%20en%20contacto%20con%20usted%20debido%20al%20siguiente%20mensaje%20recibido:%0D%0A%0D%0A${mensaje}%0D%0A%0D%0AAtentamente,%0D%0APsique%0D%0A%0D%0A">Responder contacto</a>
+          `
+      }).then(message => {
+        var modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = '<div style="text-align: center;"><img src="https://fratellishelados.netlify.app/images/logo/logo.png" alt="Imagen" style="display: block; margin-left: auto; margin-right: auto; width: 30%; padding-bottom: 10px;" /><p style="font-family: Arial, sans-serif; font-weight: bold;">¡Gracias, tu mensaje se ha enviado con éxito!</p></div>';
+        $('#emailModal').modal('show');
+        setTimeout(function() {
+            $('#emailModal').modal('hide');
+        }, 3000);
+        document.getElementById("nombre").value = "";
+        document.getElementById("correo").value = "";
+        document.getElementById("mensaje").value = "";
+      });
+  }
+</script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
