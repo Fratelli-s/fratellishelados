@@ -38,8 +38,7 @@
     <link href="https://fonts.cdnfonts.com/css/bacana" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <link rel="canonical" href="http://www.example.com/fratellis-helados" />
-    <link rel="icon" type="image/png" href="images/logo/favicon.png">
-
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   </head>
   <body>
     <div class="top-bar">
@@ -526,6 +525,29 @@
         </div>
       </div>
     </footer>
+
+    <!-- Principio del widget de globo de Calendly -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: "https://calendly.com/fratellishelados?primary_color=b4945c",
+          text: "Reúnete con Fratelli's",
+          color: "#b4945c",
+          textColor: "#ffffff",
+          branding: false,
+        });
+      };
+    </script>
+    <!-- Final del widget de globo de Calendly -->
 
     <script>
       AOS.init();
