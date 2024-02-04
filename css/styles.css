@@ -207,9 +207,30 @@ h3 {
   font-family: "Bacana", sans-serif;
 }
 
+.flavor-container-edited-1 {
+  padding: 40px;
+}
+
+@media (max-width: 576px) {
+  .flavor-container-edited-1 {
+    padding: 0px;
+    padding-bottom: 5px;
+  }
+}
+
 .flavors-menu:hover h2 {
   opacity: 1;
   transition: opacity 1s ease-in-out;
+}
+
+.flavor-item-edited {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.flavor-item-p-edited {
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .flavor-item {
