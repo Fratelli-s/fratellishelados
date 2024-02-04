@@ -41,6 +41,9 @@
     <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <div class="top-bar">
       <div class="top-bar-container">
         <div class="d-flex justify-content-between">
@@ -48,9 +51,18 @@
             <span class="ml-2">fratellisheladeria16@gmail.com</span>
           </div>
           <div class="top-bar-social">
-            <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100063525325496"
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -90,7 +102,7 @@
       </div>
 
       <a class="navbar-brand mx-auto" href="index.html"
-        ><img class="main-logo" src="images/logo/logo.png"
+        ><img class="main-logo" src="images/logo/logo.png" loading="lazy"
       /></a>
 
       <div class="container-fluid justify-content-end">
@@ -115,13 +127,13 @@
     </div>
 
     <!-- First Section -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6 order-md-1 content">
           <div class="text">
             <h2 class="title">2015. el primer fratelli's</h2>
             <p class="subtitle" data-aos="fade-right">el comienzo</p>
-            <p>
+            <p style="text-align: justify">
               En 2015, se abrió el primer local de Fratelli's Helados, marcando
               el inicio de una era de excelencia en helados artesanales. Desde
               su fundación, Fratelli's se ha distinguido por su compromiso con
@@ -134,8 +146,8 @@
           </div>
         </div>
         <div
-          class="col-md-6 order-md-2 ice-cream-image2"
-          style="background-image: url('images/about/abt1.jpeg')"
+          class="col-md-6 order-md-2 ice-cream-image2 lazy-background"
+          data-bg="images/about/abt1.jpeg"
         >
           <!-- Image is set as a background -->
         </div>
@@ -143,13 +155,13 @@
     </div>
 
     <!-- Second Section (Text First for Mobile and Desktop) -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6 order-md-2 content">
           <div class="text">
             <h2 class="title">2018. Remodelación</h2>
             <p class="subtitle" data-aos="fade-left">cambios elegantes</p>
-            <p>
+            <p style="text-align: justify">
               Para 2018, decidimos llevar a Fratelli's Helados a un nuevo nivel
               con una completa remodelación de nuestro local, introduciendo un
               concepto más elegante y colores que reflejan nuestra pasión por el
@@ -162,8 +174,8 @@
           </div>
         </div>
         <div
-          class="col-md-6 order-md-1 ice-cream-image2"
-          style="background-image: url('images/about/abt2.jpg')"
+          class="col-md-6 order-md-1 ice-cream-image2 lazy-background"
+          data-bg="images/about/abt2.jpg"
         >
           <!-- Image is set as a background -->
         </div>
@@ -171,13 +183,13 @@
     </div>
 
     <!-- Third Section (Image under Text for all views) -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6 order-md-1 content">
           <div class="text">
             <h2 class="title">2021. Introducción de Fratelli's Eventos</h2>
             <p class="subtitle" data-aos="fade-right">un nuevo concepto</p>
-            <p>
+            <p style="text-align: justify">
               El año 2021 marcó un hito importante para Fratelli's con la
               introducción de Fratelli's Eventos, un nuevo concepto diseñado
               para llevar nuestros exquisitos helados y cafés a todo tipo de
@@ -191,8 +203,8 @@
           </div>
         </div>
         <div
-          class="col-md-6 order-md-2 ice-cream-image2"
-          style="background-image: url('images/about/abt3.jpg')"
+          class="col-md-6 order-md-2 ice-cream-image2 lazy-background"
+          data-bg="images/about/abt3.jpg"
         >
           <!-- Image is set as a background -->
         </div>
@@ -200,7 +212,7 @@
     </div>
 
     <!-- Fourth Section (Text First for Mobile and Desktop) -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6 order-md-2 content">
           <div class="text">
@@ -208,7 +220,7 @@
               2022. Primer Evento con Fratelli's Punto de venta
             </h2>
             <p class="subtitle" data-aos="fade-left">nuevos caminos</p>
-            <p>
+            <p style="text-align: justify">
               En 2022, Fratelli's Helados celebró su primer evento con el punto
               de venta móvil de Fratelli's Eventos, marcando el inicio de una
               nueva era de colaboraciones y experiencias personalizadas. Esta
@@ -221,21 +233,22 @@
           </div>
         </div>
         <div
-          class="col-md-6 order-md-1 ice-cream-image2"
-          style="background-image: url('images/about/abt4.jpg')"
+          class="col-md-6 order-md-1 ice-cream-image2 lazy-background"
+          data-bg="images/about/abt4.jpg"
         >
           <!-- Image is set as a background -->
         </div>
       </div>
     </div>
 
-    <div class="gallery-container">
+    <div class="gallery-container" data-aos="fade-up">
       <div class="row" style="margin: 0">
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <img
             src="images/gallery/gal1.jpeg"
             class="img-fluid"
             alt="Gallery Image 1"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
@@ -243,6 +256,7 @@
             src="images/gallery/gal3.jpg"
             class="img-fluid"
             alt="Gallery Image 2"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
@@ -250,6 +264,7 @@
             src="images/gallery/gal2.jpg"
             class="img-fluid"
             alt="Gallery Image 3"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
@@ -257,6 +272,7 @@
             src="images/gallery/gal8.jpg"
             class="img-fluid"
             alt="Gallery Image 4"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
@@ -264,6 +280,7 @@
             src="images/gallery/gal5.jpg"
             class="img-fluid"
             alt="Gallery Image 5"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
@@ -271,6 +288,7 @@
             src="images/gallery/gal6.jpeg"
             class="img-fluid"
             alt="Gallery Image 6"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
@@ -278,6 +296,7 @@
             src="images/gallery/gal7.jpeg"
             class="img-fluid"
             alt="Gallery Image 7"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
@@ -285,6 +304,7 @@
             src="images/gallery/gal4.jpg"
             class="img-fluid"
             alt="Gallery Image 8"
+            loading="lazy"
           />
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
@@ -292,6 +312,7 @@
             src="images/gallery/gal9.jpg"
             class="img-fluid"
             alt="Gallery Image 9"
+            loading="lazy"
           />
         </div>
       </div>
@@ -301,7 +322,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <img class="footer-logo" src="images/logo/logo.png" />
+            <img
+              class="footer-logo"
+              src="images/logo/logo.png"
+              loading="lazy"
+            />
             <p class="footer-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
               eius od tempor incididunt ut labore et dolore magna.
@@ -309,13 +334,18 @@
 
             <ul class="footer-social">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063525325496"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
             <div class="footer-bottom">
@@ -330,9 +360,9 @@
                 ></span
               >
               <ul class="footer-nav">
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">catering</a></li>
-                <li><a href="#">tienda</a></li>
+                <li><a href="about.html">nosotros</a></li>
+                <li><a href="catering.html">catering</a></li>
+                <li><a href="shop.html">tienda</a></li>
                 <li>
                   <a
                     href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
@@ -389,6 +419,33 @@
       }
 
       setInterval(nextSlide, slideInterval);
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        // Set a timeout to hide the loader after a specific time
+        setTimeout(function () {
+          document.querySelector(".loader-container").style.display = "none";
+        }, 2000); // Adjust the time as needed (3000 milliseconds = 3 seconds)
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lazyBackgrounds = [].slice.call(
+          document.querySelectorAll(".lazy-background")
+        );
+
+        lazyBackgrounds.forEach(function (lazyBackground) {
+          const src = lazyBackground.getAttribute("data-bg");
+          lazyBackground.style.backgroundImage = "url('" + src + "')";
+        });
+      });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
