@@ -2,6 +2,7 @@ body {
   font-family: "Oswald", sans-serif;
   color: #333;
   background-color: #f8f8f8;
+  overflow-x: hidden !important;
 }
 
 h3 {
@@ -105,36 +106,44 @@ h3 {
   background-color: #b4945c; /* Adjust the color to match your design */
 }
 .carousel-item {
-  height: 873px;
-  background-color: #000; /* Fallback color */
+  height: 585px;
+  background-color: #e1dfd2;
 }
+
 .carousel-item img {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 873px;
-  width: 100%;
-  object-fit: cover;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Centra la imagen horizontalmente */
+  max-height: 70vh; /* El 70% del alto de la ventana del navegador */
+  width: auto; /* Se ajustará automáticamente al ancho de la ventana */
 }
+
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center; /* Alinea el texto al centro */
 }
 
 @keyframes slideUp {
   from {
-    transform: translateY(100%);
+    transform: translateY(50%);
+    opacity: 0;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .carousel-caption h5 {
-  color: #b4945c;
+  color: #333;
   font-size: 70px;
   animation: slideUp 1s ease-in-out;
 }
@@ -214,4 +223,36 @@ cite {
   font-size: 22px; /* Adjust the size to match the screenshot */
   margin-top: 3rem; /* Adjust the spacing as needed */
   font-family: "Bacana", sans-serif; /* Change to the font used in the screenshot */
+}
+
+.brand-carousel img {
+  width: 300px; 
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+.single-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  height: 720px;
+}
+
+.single-logo p{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.brand-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b4945c;
+  height: 720px;
 }
