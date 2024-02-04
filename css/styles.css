@@ -1,7 +1,7 @@
 body {
   font-family: "Oswald", sans-serif;
   color: #333;
-  background-color: #f1f2ef;
+  background-color: white;
   overflow-x: hidden !important;
 }
 
@@ -46,6 +46,7 @@ h3 {
 .order-btn {
   padding: 10px 30px;
   border: 1px solid #b4945c;
+  background-color: white;
   color: #b4945c;
   border-radius: 5px;
   text-decoration: none;
@@ -108,7 +109,7 @@ h3 {
 }
 .carousel-item {
   height: 585px;
-  background-color: #e1dfd2;
+  background-color: #f1f2ef;
 }
 
 .carousel-item img {
@@ -147,13 +148,13 @@ h3 {
   color: #333;
   font-size: 70px;
   animation: slideUp 1s ease-in-out;
+  text-transform: uppercase;
 }
 
 .flavors-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1f2ef; /* Light peach background, adjust as needed */
 }
 
 .flavors-menu {
@@ -201,10 +202,9 @@ h3 {
 }
 
 .quote-section {
-  background: #e2dfd2; /* Adjust the color to match the screenshot */
+  background: #f1f2ef; /* Adjust the color to match the screenshot */
   padding: 195px 0; /* Adjust the padding to match the spacing in the screenshot */
   color: #333; /* Adjust the color to match the text color in the screenshot */
-  font-family: "Open Sans", sans-serif; /* Change to the font used in the screenshot */
 }
 
 .quote-section .container {
@@ -249,7 +249,7 @@ cite {
 }
 
 #events {
-  background: #e2dfd2; /* Adjust the color to match the screenshot */
+  background: #f1f2ef; /* Adjust the color to match the screenshot */
   padding: 195px 0; /* Adjust the padding to match the spacing in the screenshot */
   color: #333; /* Adjust the color to match the text color in the screenshot */
   font-family: "Open Sans", sans-serif; /* Change to the font used in the screenshot */
@@ -361,26 +361,6 @@ cite {
   border-color: #b4945c;
   outline: 0;
   box-shadow: 0 0 0 0.2rem #b4945c;
-}
-
-#events {
-  background: #e2dfd2; /* Adjust the color to match the screenshot */
-  padding: 195px 0; /* Adjust the padding to match the spacing in the screenshot */
-  color: #333; /* Adjust the color to match the text color in the screenshot */
-  font-family: "Open Sans", sans-serif; /* Change to the font used in the screenshot */
-}
-
-#events h2 {
-  font-size: 15px;
-  margin-bottom: 10px;
-
-  color: #b5bbc2;
-  font-family: "Bacana", sans-serif;
-}
-
-#events .card {
-  background-color: transparent;
-  border: none;
 }
 
 .footer {
@@ -457,7 +437,7 @@ cite {
 }
 
 .brand-carousel img {
-  width: 300px; 
+  width: 300px;
   height: 300px;
   max-width: 300px;
   max-height: 300px;
@@ -467,13 +447,13 @@ cite {
 .single-logo {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 720px;
 }
 
-.single-logo p{
+.single-logo p {
   color: white;
   font-family: "Oswald", sans-serif;
   margin-bottom: 0;
@@ -486,4 +466,180 @@ cite {
   align-items: center;
   background-color: #b4945c;
   height: 720px;
+}
+
+/* about.html */
+
+.banner {
+  color: #333;
+  text-align: left;
+  padding: 150px 0; /* Adjust the padding to match the banner size in the image */
+  background-color: #ffffff;
+  text-transform: uppercase;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'%3E%3Cg stroke='%23E2DFD2' stroke-width='0' %3E%3Crect fill='%23F1F2EF' x='-60' y='-60' width='100' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.banner h1 {
+  font-size: 4rem; /* Adjust the size as needed */
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.banner .few-words {
+  font-size: 1rem; /* Adjust the size as needed */
+  margin-bottom: 20px;
+  font-family: "Bacana", sans-serif; /* Change to the font used in the screenshot */
+}
+
+.ice-cream-section {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.ice-cream-image {
+  background-image: url("images/about/abt1.jpg"); /* The path should be relative to the location of your CSS file */
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 50px; /* Adjust based on actual padding needed */
+}
+
+.title {
+  font-size: 3rem; /* Adjust based on actual size needed */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #b4945c;
+}
+
+.subtitle {
+  font-size: 1rem; /* Adjust based on actual size needed */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Bacana", sans-serif;
+  color: #b5bbc2;
+}
+
+.gallery-container {
+  padding-top: 2rem;
+}
+
+/* Optional: Add styles for hover effects or padding between images */
+.gallery-container img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+/* catering.html */
+
+.banner-background {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='165' height='165' viewBox='0 0 20 20'%3E%3Cg %3E%3Cpolygon fill='%23F1F2EF' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23F1F2EF' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.banner-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #333; /* Adjust the color as needed */
+}
+
+.banner-title {
+  font-size: 4rem; /* Adjust the size as needed */
+  font-weight: bold;
+}
+
+.banner-subtitle {
+  font-family: "Bacana", sans-serif;
+  font-size: 1rem; /* Adjust the size as needed */
+}
+
+.pricing-section-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pricing-deal-tagline {
+  font-family: "Bacana", sans-serif; /* Change to the font used in the screenshot */
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #b5bbc2;
+}
+
+.pricing-section-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pricing-card-container {
+  margin-bottom: 1rem;
+}
+
+.pricing-card {
+  border: none;
+  text-align: center;
+}
+
+.pricing-card-header {
+  background-color: #b4945c;
+  color: white;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.pricing-card-body {
+  padding: 1.5rem;
+}
+
+.pricing-amount {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+
+.pricing-features {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-read-more {
+  padding: 10px 30px;
+  border: 1px solid #b4945c;
+  background-color: white;
+  color: #b4945c;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Adjust the time as needed */
+  margin-top: 1rem;
+}
+
+.pricing-read-more:hover {
+  background-color: #b4945c;
+  color: white;
+  text-decoration: none;
+}
+
+/* shop.html */
+
+/* Full screen GIF container with decreased height */
+.gif-container {
+  height: 50vh; /* or any other value that suits your design */
+  overflow: hidden;
+  position: relative; /* If you need to absolutely position elements inside */
+}
+
+/* Center the GIF in the container if it's not covering the whole area */
+.gif-container img {
+  object-fit: contain; /* Changed to 'contain' to make sure the whole gif is visible */
+  max-height: 100%; /* Set maximum height to 100% of the container */
+  width: auto; /* Set width to auto to maintain aspect ratio */
+  display: block; /* Display block to remove bottom space */
+  margin: auto; /* Auto margins to center it horizontally */
 }
