@@ -2,6 +2,7 @@ body {
   font-family: "Oswald", sans-serif;
   color: #333;
   background-color: #f1f2ef;
+  overflow-x: hidden !important;
 }
 
 h3 {
@@ -106,27 +107,46 @@ h3 {
   background-color: #b4945c; /* Adjust the color to match your design */
 }
 .carousel-item {
-  height: 873px;
-  background-color: #000; /* Fallback color */
+  height: 585px;
+  background-color: #e1dfd2;
 }
+
 .carousel-item img {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 873px;
-  width: 100%;
-  object-fit: cover;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Centra la imagen horizontalmente */
+  max-height: 70vh; /* El 70% del alto de la ventana del navegador */
+  width: auto; /* Se ajustará automáticamente al ancho de la ventana */
 }
+
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center; /* Alinea el texto al centro */
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .carousel-caption h5 {
-  color: #b4945c;
+  color: #333;
   font-size: 70px;
+  animation: slideUp 1s ease-in-out;
 }
 
 .flavors-section {
@@ -319,4 +339,151 @@ cite {
     text-align: center;
     margin-top: 20px;
   }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #b4945c;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #b4945c;
+}
+
+#events {
+  background: #e2dfd2; /* Adjust the color to match the screenshot */
+  padding: 195px 0; /* Adjust the padding to match the spacing in the screenshot */
+  color: #333; /* Adjust the color to match the text color in the screenshot */
+  font-family: "Open Sans", sans-serif; /* Change to the font used in the screenshot */
+}
+
+#events h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+
+  color: #b5bbc2;
+  font-family: "Bacana", sans-serif;
+}
+
+#events .card {
+  background-color: transparent;
+  border: none;
+}
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer-logo {
+  color: #333;
+  margin-bottom: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.footer-text {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.footer-social li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-social i {
+  color: #b4945c;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.footer-bottom span {
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 15px;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  padding-top: 2rem;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav a {
+  color: #333;
+
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .footer-newsletter input,
+  .footer-newsletter button {
+    width: 100%;
+  }
+
+  .back-to-top {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.brand-carousel img {
+  width: 300px; 
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+.single-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  height: 720px;
+}
+
+.single-logo p{
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.brand-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b4945c;
+  height: 720px;
 }
