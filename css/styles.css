@@ -5,6 +5,10 @@ body {
   overflow-x: hidden !important;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 h3 {
   font-size: 42px;
   text-transform: uppercase;
@@ -496,14 +500,18 @@ cite {
   color: #333;
 }
 
-.ice-cream-image {
-  background-image: url("images/about/abt1.jpg"); /* The path should be relative to the location of your CSS file */
-  background-size: cover;
-  background-position: center;
+.ice-cream-image2 {
+  background-size: cover; /* Cover the entire div without stretching the image */
+  background-position: center; /* Center the background image */
+  min-height: 400px; /* Minimum height to ensure visibility on smaller screens */
 }
 
-.content {
-  padding: 50px; /* Adjust based on actual padding needed */
+@media (max-width: 768px) {
+  .ice-cream-image2 {
+    min-height: 150px; /* Adjust based on your design needs */
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .title {
@@ -511,6 +519,7 @@ cite {
   font-weight: bold;
   margin-bottom: 20px;
   color: #b4945c;
+  text-transform: uppercase;
 }
 
 .subtitle {
