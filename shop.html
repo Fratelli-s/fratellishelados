@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda Fratelli's </title>
+    <title>Tienda Fratelli's</title>
     <meta
       name="description"
       content="Descubre Fratelli's Helados, la heladería y cafetería de primera en la Ciudad de México. Con más de 15 años de experiencia, nos enorgullecemos de elaborar helado casero, paletas de hielo y café gourmet."
@@ -41,6 +41,9 @@
     <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <div class="top-bar">
       <div class="top-bar-container">
         <div class="d-flex justify-content-between">
@@ -48,9 +51,18 @@
             <span class="ml-2">fratellisheladeria16@gmail.com</span>
           </div>
           <div class="top-bar-social">
-            <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100063525325496"
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -103,11 +115,15 @@
       </div>
     </nav>
 
-    <div class="gif-container d-flex align-items-center justify-content-center">
+    <div
+      class="gif-container d-flex align-items-center justify-content-center"
+      data-aos="fade-up"
+    >
       <img
         src="images/shop/soon.gif"
         alt="Full-Screen Gif"
         class="img-fluid w-100 h-100"
+        loading="lazy"
       />
     </div>
 
@@ -123,13 +139,18 @@
 
             <ul class="footer-social">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063525325496"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
             <div class="footer-bottom">
@@ -144,9 +165,9 @@
                 ></span
               >
               <ul class="footer-nav">
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">catering</a></li>
-                <li><a href="#">tienda</a></li>
+                <li><a href="about.html">nosotros</a></li>
+                <li><a href="catering.html">catering</a></li>
+                <li><a href="shop.html">tienda</a></li>
                 <li>
                   <a
                     href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
@@ -204,6 +225,20 @@
       }
 
       setInterval(nextSlide, slideInterval);
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        // Set a timeout to hide the loader after a specific time
+        setTimeout(function () {
+          document.querySelector(".loader-container").style.display = "none";
+        }, 2000); // Adjust the time as needed (3000 milliseconds = 3 seconds)
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

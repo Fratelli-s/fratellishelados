@@ -38,9 +38,12 @@
     <link href="https://fonts.cdnfonts.com/css/bacana" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <link rel="canonical" href="http://www.example.com/fratellis-helados" />
-    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+    <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
     <div class="top-bar">
       <div class="top-bar-container">
         <div class="d-flex justify-content-between">
@@ -48,9 +51,18 @@
             <span class="ml-2">fratellisheladeria16@gmail.com</span>
           </div>
           <div class="top-bar-social">
-            <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100063525325496"
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -103,20 +115,20 @@
       </div>
     </nav>
 
-    <div class="banner-background">
+    <div class="banner-background" data-aos="fade-up">
       <div class="banner-content">
-        <div class="banner-subtitle">few words</div>
-        <h1 class="banner-title">PRICING PLANS</h1>
+        <div class="banner-subtitle">catering</div>
+        <h1 class="banner-title">Fratelli's Eventos</h1>
       </div>
     </div>
 
-    <div class="container" style="padding-top: 100px">
+    <div class="container" style="padding-top: 100px" data-aos="fade-up">
       <div class="pricing-section-header">
-        <div class="pricing-deal-tagline">best deals</div>
-        <h2 class="pricing-section-title">CREAMY PRICING PLANS</h2>
+        <div class="pricing-deal-tagline">celebra con helado</div>
+        <h2 class="pricing-section-title">Planes de Precios Irresistibles</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod
-          tempor incididunt ut
+          Descubre la perfecta combinación de calidad y precio, diseñada para
+          deleitar a cada paladar.
         </p>
       </div>
 
@@ -124,73 +136,127 @@
         <!-- Basic Offer 1 -->
         <div class="col-md-3 pricing-card-container">
           <div class="card pricing-card">
-            <div class="card-header pricing-card-header">
-              BASIC OFFER / Monthly
-            </div>
+            <div class="pricing-card-header">Fiesta Fratelli's</div>
             <div class="card-body pricing-card-body">
-              <div class="pricing-amount">$199</div>
+              <div class="pricing-amount">$499 /mx</div>
               <ul class="list-unstyled pricing-features">
-                <li>✔ Duis aute irure dolor</li>
-                <li>✔ voluptate into</li>
-                <li>✔ Velit esse cillum</li>
-                <li>✔ Fugiat nulla pariatur</li>
+                <li>✔ Selección de 5 sabores de helado</li>
+                <li>✔ Hasta 50 personas</li>
+                <li>✔ 3 horas de servicio</li>
+                <li>✔ Incluye barista para café gourmet</li>
+                <li>✔ Montaje y desmontaje incluidos</li>
               </ul>
-              <a href="#" class="btn pricing-read-more">READ MORE</a>
+              <a
+                href="https://calendly.com/fratellishelados/30min"
+                target="_blank"
+                class="btn pricing-read-more"
+                >más información</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-3 pricing-card-container">
           <div class="card pricing-card">
-            <div class="card-header pricing-card-header">
-              BASIC OFFER / Monthly
-            </div>
+            <div class="pricing-card-header">Encanto Helado</div>
             <div class="card-body pricing-card-body">
-              <div class="pricing-amount">$199</div>
+              <div class="pricing-amount">$749 /mx</div>
               <ul class="list-unstyled pricing-features">
-                <li>✔ Duis aute irure dolor</li>
-                <li>✔ voluptate into</li>
-                <li>✔ Velit esse cillum</li>
-                <li>✔ Fugiat nulla pariatur</li>
+                <li>✔ Selección de 8 sabores de helado</li>
+                <li>✔ Hasta 100 personas</li>
+                <li>✔ 4 horas de servicio</li>
+                <li>✔ Café gourmet y selección de tés</li>
+                <li>✔ Personal de servicio incluido</li>
               </ul>
-              <a href="#" class="btn pricing-read-more">READ MORE</a>
+              <a
+                href="https://calendly.com/fratellishelados/30min"
+                target="_blank"
+                class="btn pricing-read-more"
+                >más información</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-3 pricing-card-container">
           <div class="card pricing-card">
-            <div class="card-header pricing-card-header">
-              BASIC OFFER / Monthly
-            </div>
+            <div class="pricing-card-header">Gala Gourmet</div>
             <div class="card-body pricing-card-body">
-              <div class="pricing-amount">$199</div>
+              <div class="pricing-amount">$999 /mx</div>
               <ul class="list-unstyled pricing-features">
-                <li>✔ Duis aute irure dolor</li>
-                <li>✔ voluptate into</li>
-                <li>✔ Velit esse cillum</li>
-                <li>✔ Fugiat nulla pariatur</li>
+                <li>✔ Selección ilimitada de sabores</li>
+                <li>✔ Hasta 150 personas</li>
+                <li>✔ 5 horas de servicio completo</li>
+                <li>✔ Café, té y bebidas especiales</li>
+                <li>✔ Montaje premium y personal especializado</li>
               </ul>
-              <a href="#" class="btn pricing-read-more">READ MORE</a>
+              <a
+                href="https://calendly.com/fratellishelados/30min"
+                target="_blank"
+                class="btn pricing-read-more"
+                >más información</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-3 pricing-card-container">
           <div class="card pricing-card">
-            <div class="card-header pricing-card-header">
-              BASIC OFFER / Monthly
-            </div>
+            <div class="pricing-card-header">Dulce Empresarial</div>
             <div class="card-body pricing-card-body">
-              <div class="pricing-amount">$199</div>
+              <div class="pricing-amount">$1,299 /mx</div>
               <ul class="list-unstyled pricing-features">
-                <li>✔ Duis aute irure dolor</li>
-                <li>✔ voluptate into</li>
-                <li>✔ Velit esse cillum</li>
-                <li>✔ Fugiat nulla pariatur</li>
+                <li>✔ Sabores personalizados</li>
+                <li>✔ Hasta 200 personas</li>
+                <li>✔ 6 horas de servicio</li>
+                <li>✔ Café gourmet y opciones veganas</li>
+                <li>✔ Planificación y coordinación del evento</li>
               </ul>
-              <a href="#" class="btn pricing-read-more">READ MORE</a>
+              <a
+                href="https://calendly.com/fratellishelados/30min"
+                target="_blank"
+                class="btn pricing-read-more"
+                >más información</a
+              >
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 text-center">
+        <div class="col-12">
+          <div class="pricing-disclaimer" style="color: #b5bbc2">
+            <h4 class="disclaimer-title">Términos y Condiciones</h4>
+            <p class="disclaimer-text">
+              Por favor, ten en cuenta lo siguiente para todos nuestros planes
+              de catering:
+            </p>
+            <ul class="list-unstyled disclaimer-list">
+              <li>
+                ✖ El transporte desde el punto de venta Fratelli's hasta el
+                lugar del evento no está incluido en el precio base y se
+                cotizará por separado.
+              </li>
+              <li>
+                ✖ La inclusión de productos extra del menú en un plan
+                predeterminado puede incurrir en costos adicionales.
+              </li>
+              <li>
+                ✖ Agregar más personas de las contempladas en el plan
+                seleccionado, así como extender las horas de servicio, tendrá un
+                costo extra.
+              </li>
+            </ul>
+            <p class="disclaimer-note">
+              Para más detalles sobre estos y otros posibles costos adicionales,
+              por favor
+              <a
+                href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
+                target="_blank"
+                style="color: #b4945c; text-decoration: none"
+                >contáctanos</a
+              >. Estamos comprometidos en hacer de tu evento una experiencia
+              única y memorable, adaptándonos a tus necesidades específicas.
+            </p>
           </div>
         </div>
       </div>
@@ -208,13 +274,18 @@
 
             <ul class="footer-social">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063525325496"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
             <div class="footer-bottom">
@@ -229,9 +300,9 @@
                 ></span
               >
               <ul class="footer-nav">
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">catering</a></li>
-                <li><a href="#">tienda</a></li>
+                <li><a href="about.html">nosotros</a></li>
+                <li><a href="catering.html">catering</a></li>
+                <li><a href="shop.html">tienda</a></li>
                 <li>
                   <a
                     href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
@@ -291,6 +362,20 @@
       setInterval(nextSlide, slideInterval);
     </script>
 
+    <script>
+      window.addEventListener("load", function () {
+        // Set a timeout to hide the loader after a specific time
+        setTimeout(function () {
+          document.querySelector(".loader-container").style.display = "none";
+        }, 2000); // Adjust the time as needed (3000 milliseconds = 3 seconds)
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

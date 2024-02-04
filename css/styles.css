@@ -9,6 +9,33 @@ html {
   overflow-x: hidden;
 }
 
+.loader-container {
+  position: fixed; /* Use fixed to cover the whole screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* White background */
+  display: flex;
+  justify-content: center; /* Center the loader horizontally */
+  align-items: center; /* Center the loader vertically */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #b4945c #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
 h3 {
   font-size: 42px;
   text-transform: uppercase;
@@ -256,7 +283,6 @@ cite {
   background: #f1f2ef; /* Adjust the color to match the screenshot */
   padding: 195px 0; /* Adjust the padding to match the spacing in the screenshot */
   color: #333; /* Adjust the color to match the text color in the screenshot */
-  font-family: "Open Sans", sans-serif; /* Change to the font used in the screenshot */
 }
 
 #events h2 {
@@ -270,6 +296,10 @@ cite {
 #events .card {
   background-color: transparent;
   border: none;
+}
+
+#events .card-img-top{
+    border-radius: 15px;
 }
 
 .footer {
@@ -608,6 +638,8 @@ cite {
 .pricing-card {
   border: none;
   text-align: center;
+  border-radius: 15px;
+  background-color: #f1f2ef;
 }
 
 .pricing-card-header {
@@ -616,6 +648,8 @@ cite {
   padding: 1rem;
   font-size: 1.25rem;
   font-weight: bold;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .pricing-card-body {

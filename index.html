@@ -41,6 +41,10 @@
     <link rel="icon" type="image/png" href="images/logo/favicon.png" />
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
     <div class="top-bar">
       <div class="top-bar-container">
         <div class="d-flex justify-content-between">
@@ -48,9 +52,18 @@
             <span class="ml-2">fratellisheladeria16@gmail.com</span>
           </div>
           <div class="top-bar-social">
-            <a href="#" class="mr-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100063525325496"
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              class="mr-2"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -90,7 +103,7 @@
       </div>
 
       <a class="navbar-brand mx-auto" href="index.html"
-        ><img class="main-logo" src="images/logo/logo.png"
+        ><img class="main-logo" src="images/logo/logo.png" loading="lazy"
       /></a>
 
       <div class="container-fluid justify-content-end">
@@ -110,19 +123,31 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active" data-aos="fade-up">
-          <img src="images/main-carousel/cream-1.png" alt="..." />
+          <img
+            src="images/main-carousel/cream-1.png"
+            alt="..."
+            loading="lazy"
+          />
           <div class="carousel-caption">
             <h5>First slide label</h5>
           </div>
         </div>
         <div class="carousel-item" data-aos="fade-up">
-          <img src="images/main-carousel/cream-2.png" alt="..." />
+          <img
+            src="images/main-carousel/cream-2.png"
+            alt="..."
+            loading="lazy"
+          />
           <div class="carousel-caption">
             <h5>Second slide label</h5>
           </div>
         </div>
         <div class="carousel-item" data-aos="fade-up">
-          <img src="images/main-carousel/cream-3.png" alt="..." />
+          <img
+            src="images/main-carousel/cream-3.png"
+            alt="..."
+            loading="lazy"
+          />
           <div class="carousel-caption">
             <h5>Third slide label</h5>
           </div>
@@ -148,11 +173,13 @@
       </a>
     </div>
 
-    <div class="container-fluid">
-      <div class="row" style="min-height: 720px;">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row" style="min-height: 720px">
         <div
-          class="col-md-6 order-md-1 order-lg-1 order-2 order-xs-2 ice-cream-image-edited "
-          style="background-image: url('images/icecream-flavours/Chocolate Ice Cream.jpg');"
+          class="col-md-6 order-md-1 order-lg-1 order-2 order-xs-2 ice-cream-image-edited"
+          style="
+            background-image: url('images/icecream-flavours/Chocolate Ice Cream.jpg');
+          "
         >
           <!-- Image is set as a background -->
         </div>
@@ -163,32 +190,32 @@
             <div class="flavor-container">
               <div class="flavor-item">
                 <p>Chocolate</p>
-                <p>$5</p>
+                <p>Nuez</p>
               </div>
               <div class="flavor-item">
-                <p>Vanilla</p>
-                <p>$3</p>
+                <p>Vainilla</p>
+                <p>Rompope</p>
               </div>
               <div class="flavor-item">
-                <p>Strawberry</p>
-                <p>$9</p>
+                <p>Queso Cereza</p>
+                <p>Taro</p>
               </div>
               <div class="flavor-item">
-                <p>Apple</p>
-                <p>$2</p>
+                <p>Limón</p>
+                <p>Fresa</p>
               </div>
               <div class="flavor-item">
-                <p>Strawberry</p>
-                <p>$9</p>
+                <p>Galleta</p>
+                <p>Ron con Pasas</p>
               </div>
-    
+
               <div class="flavor-item">
-                <p>Apple</p>
-                <p>$2</p>
+                <p>Tutti Frutti</p>
+                <p>Café</p>
               </div>
               <div class="flavor-item">
-                <p>Strawberry</p>
-                <p>$9</p>
+                <p>Menta</p>
+                <p>Nutella</p>
               </div>
             </div>
             <div class="view-more">
@@ -199,7 +226,7 @@
       </div>
     </div>
 
-    <div class="">
+    <div class="" data-aos="fade-up">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <link
         rel="stylesheet"
@@ -214,43 +241,71 @@
         style="background-color: #b4945c; height: 720px"
       >
         <div class="single-logo">
-          <img src="images/multi-item-carousel/chocolate.png" alt="" />
+          <img
+            src="images/multi-item-carousel/chocolate.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Chocolate</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/coco.png" alt="" />
+          <img
+            src="images/multi-item-carousel/coco.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Coco</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/fresa.png" alt="" />
+          <img
+            src="images/multi-item-carousel/fresa.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Fresa</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/melon.png" alt="" />
+          <img
+            src="images/multi-item-carousel/melon.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Melon</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/nuez.png" alt="" />
+          <img
+            src="images/multi-item-carousel/nuez.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Nuez</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/pistache.png" alt="" />
+          <img
+            src="images/multi-item-carousel/pistache.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Pistache</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
         </div>
         <div class="single-logo">
-          <img src="images/multi-item-carousel/vainilla.png" alt="" />
+          <img
+            src="images/multi-item-carousel/vainilla.png"
+            alt=""
+            loading="lazy"
+          />
           <p class="pb-2" style="font-size: 25px">Vainilla</p>
           <p class="pb-2" style="font-weight: lighter">Description</p>
           <p>$0.0</p>
@@ -279,11 +334,11 @@
       });
     </script>
 
-    <div class="container-fluid">
-      <div class="row" style="min-height: 720px;">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row" style="min-height: 720px">
         <div
-          class="col-md-6 order-md-2 order-lg-2 order-2 order-xs-2 ice-cream-image-edited "
-          style="background-image: url('images/icecream-flavours/Coffee.jpg');"
+          class="col-md-6 order-md-2 order-lg-2 order-2 order-xs-2 ice-cream-image-edited"
+          style="background-image: url('images/icecream-flavours/Coffee.jpg')"
         >
           <!-- Image is set as a background -->
         </div>
@@ -330,51 +385,59 @@
       </div>
     </div>
 
-    <section class="quote-section">
+    <section class="quote-section" data-aos="fade-up">
       <div class="container text-center">
         <blockquote>
-          One of the very nicest things about life, is the way we must regularly
-          stop whatever it is we are doing and devote our attention to eating.
+          La vida es como el helado, disfrútala antes de que se derrita.
         </blockquote>
-        <cite data-aos="fade-up">Luciano Pavarotti</cite>
+        <cite data-aos="fade-up">Fratelli's</cite>
       </div>
     </section>
 
-    <div class="container-fluid">
-      <div class="row" style="min-height: 720px;">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row" style="min-height: 720px">
         <div
-          class="col-md-12 col-sm-12 col-lg-6 order-md-1 order-lg-1 order-1 order-xs-1 ice-cream-image-edited "
-          style="background-image: url('images/icecream-flavours/Chocolate Ice Cream.jpg');"
+          class="col-md-12 col-sm-12 col-lg-6 order-md-1 order-lg-1 order-1 order-xs-1 ice-cream-image-edited"
+          style="
+            background-image: url('images/icecream-flavours/Chocolate Ice Cream.jpg');
+          "
         >
           <!-- Image is set as a background -->
         </div>
-        <div class="col-md-12 col-sm-12 col-lg-6 order-lg-2 order-md-2 order-2 order-xs-2 content">
+        <div
+          class="col-md-12 col-sm-12 col-lg-6 order-lg-2 order-md-2 order-2 order-xs-2 content"
+        >
           <div class="flavors-menu">
             <h2 class="text-center" data-aos="fade-left">catering</h2>
             <h3 class="text-center mb-5">Fratelli's en tus eventos</h3>
             <div class="flavor-container" style="padding-top: 0px">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+              <p style="text-align: justify">
+                Fratelli's Eventos lleva la magia de nuestros exquisitos helados
+                y café gourmet directamente a tu celebración. Nuestro servicio
+                de catering está diseñado para convertir cada ocasión en una
+                experiencia única y memorable. Desde bodas hasta reuniones
+                corporativas, ofrecemos una amplia selección de sabores y
+                presentaciones que se adaptan a tus necesidades, garantizando
+                que tus invitados disfruten de momentos dulces e inolvidables.
+                Deja que Fratelli's sea el toque especial en tus eventos,
+                brindándote la calidad y el sabor artesanal que nos caracteriza.
               </p>
             </div>
             <div class="view-more">
-              <button class="order-btn">explorar catering</button>
+              <a href="catering.html"
+                ><button class="order-btn">explorar catering</button></a
+              >
             </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row" style="min-height: 700px;">
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row" style="min-height: 700px">
         <div
           class="col-md-6 order-md-2 order-lg-2 order-1 order-xs-1 ice-cream-image-edited"
-          style="background-image: url('images/icecream-flavours/Coffee.jpg');"
+          style="background-image: url('images/icecream-flavours/Coffee.jpg')"
         >
           <!-- Image is set as a background -->
         </div>
@@ -383,12 +446,13 @@
             <h2 class="text-center" data-aos="fade-right">contactános</h2>
             <h3 class="text-center mb-5">Escríbenos todas tus dudas</h3>
             <div class="flavor-container" style="padding-top: 0px">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p style="text-align: justify">
+                En Fratelli's Helados, tu satisfacción es nuestra prioridad.
+                Para preguntas, asesoramiento para eventos o compartir tu
+                experiencia, contáctanos. ¡Hagamos juntos algo memorable!
               </p>
             </div>
-    
+
             <!-- Contact Form -->
             <form id="contact-form">
               <div class="form-group">
@@ -430,7 +494,7 @@
       </div>
     </div>
 
-    <section id="events">
+    <section id="events" data-aos="fade-up">
       <div class="container text-center">
         <h2 class="text-center" data-aos="fade-right">eventos</h2>
         <h3 class="text-center mb-5">Que nunca falte el helado</h3>
@@ -438,27 +502,17 @@
           <div class="col-md-4 mb-3">
             <div class="card">
               <img
-                src="berry_bread.jpg"
+                src="images/events/event1.jpg"
                 class="card-img-top"
                 alt="Berry Bread"
+                loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title">BERRY BREAD</h5>
+                <h5 class="card-title">Cumpleaños</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                  eiusmod tempor.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="sunny_day.jpg" class="card-img-top" alt="Sunny Day" />
-              <div class="card-body">
-                <h5 class="card-title">SUNNY DAY</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                  eiusmod tempor.
+                  Fratelli's Helados lleva la alegría a tu cumpleaños con
+                  helados artesanales. Variedad de sabores para una celebración
+                  inolvidable.
                 </p>
               </div>
             </div>
@@ -466,15 +520,34 @@
           <div class="col-md-4 mb-3">
             <div class="card">
               <img
-                src="white_candy.jpg"
+                src="images/events/event2.jpg"
                 class="card-img-top"
-                alt="White Candy"
+                alt="Sunny Day"
+                loading="lazy"
               />
               <div class="card-body">
-                <h5 class="card-title">WHITE CANDY</h5>
+                <h5 class="card-title">Boda</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                  eiusmod tempor.
+                  Enriquece tu boda con Fratelli's Helados. Servicio de catering
+                  elegante para deleitar a tus invitados con sabores únicos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="images/events/event3.jpg"
+                class="card-img-top"
+                alt="White Candy"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Evento Corporativo</h5>
+                <p class="card-text">
+                  Eleva tus eventos corporativos con Fratelli's Helados. Helado
+                  gourmet que añade un toque sofisticado a reuniones y
+                  celebraciones.
                 </p>
               </div>
             </div>
@@ -487,7 +560,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <img class="footer-logo" src="images/logo/logo.png" />
+            <img
+              class="footer-logo"
+              src="images/logo/logo.png"
+              loading="lazy"
+            />
             <p class="footer-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
               eius od tempor incididunt ut labore et dolore magna.
@@ -495,13 +572,18 @@
 
             <ul class="footer-social">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063525325496"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  href="https://www.instagram.com/fratellishelados_mx?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
             <div class="footer-bottom">
@@ -516,9 +598,9 @@
                 ></span
               >
               <ul class="footer-nav">
-                <li><a href="#">nosotros</a></li>
-                <li><a href="#">catering</a></li>
-                <li><a href="#">tienda</a></li>
+                <li><a href="about.html">nosotros</a></li>
+                <li><a href="catering.html">catering</a></li>
+                <li><a href="shop.html">tienda</a></li>
                 <li>
                   <a
                     href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
@@ -576,6 +658,20 @@
       }
 
       setInterval(nextSlide, slideInterval);
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        // Set a timeout to hide the loader after a specific time
+        setTimeout(function () {
+          document.querySelector(".loader-container").style.display = "none";
+        }, 2000); // Adjust the time as needed (3000 milliseconds = 3 seconds)
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
