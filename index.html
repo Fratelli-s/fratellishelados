@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glace Ice Cream</title>
+    <title>
+      Fratelli's Helados | Artisan Ice Cream & Coffee Shop in Mexico City
+    </title>
+    <meta
+      name="description"
+      content="Discover Fratelli's Helados, the premier ice cream and coffee shop in Mexico City. With over 15 years of experience, we pride ourselves on crafting homemade ice cream, ice popsicles, and gourmet coffee."
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -11,7 +17,6 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
@@ -20,7 +25,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,16 +32,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.cdnfonts.com/css/silverstar" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/bacana" rel="stylesheet" />
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <link rel="canonical" href="http://www.example.com/fratellis-helados" />
   </head>
   <body>
     <div class="top-bar">
@@ -370,17 +372,46 @@
         <div class="flavor-container" style="padding-top: 0px">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div class="view-more">
-          <button class="order-btn">ir ahora</button>
-        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              name="correo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="view-more">
+            <button type="submit" class="order-btn">Enviar mensaje</button>
+          </div>
+        </form>
       </div>
       <div class="flavors-image">
         <!-- Image placeholder; replace with actual image path -->
@@ -391,6 +422,103 @@
         />
       </div>
     </div>
+
+    <section id="events">
+      <div class="container text-center">
+        <h2 class="text-center" data-aos="fade-right">eventos</h2>
+        <h3 class="text-center mb-5">Que nunca falte el helado</h3>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="berry_bread.jpg"
+                class="card-img-top"
+                alt="Berry Bread"
+              />
+              <div class="card-body">
+                <h5 class="card-title">BERRY BREAD</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                  eiusmod tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="sunny_day.jpg" class="card-img-top" alt="Sunny Day" />
+              <div class="card-body">
+                <h5 class="card-title">SUNNY DAY</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                  eiusmod tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="white_candy.jpg"
+                class="card-img-top"
+                alt="White Candy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">WHITE CANDY</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+                  eiusmod tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img class="footer-logo" src="images/logo/logo.png" />
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eius od tempor incididunt ut labore et dolore magna.
+            </p>
+
+            <ul class="footer-social">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+            <div class="footer-bottom">
+              <span>© 2024 Fratelli´s Helados | </span
+              ><span
+                >Desarrollado por
+                <a
+                  href="https://www.amoxtli.tech/"
+                  target="_blank"
+                  style="color: #b4945c; text-decoration: none"
+                  >Amoxtli Web Developers</a
+                ></span
+              >
+              <ul class="footer-nav">
+                <li><a href="#">nosotros</a></li>
+                <li><a href="#">catering</a></li>
+                <li><a href="#">tienda</a></li>
+                <li><a href="#">contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       AOS.init();
@@ -412,7 +540,7 @@
     </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
