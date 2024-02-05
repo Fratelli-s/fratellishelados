@@ -90,6 +90,13 @@ h3 {
   text-decoration: none;
 }
 
+@media (max-width: 576px) {
+  .order-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
 .ice-cream-container {
   position: relative;
   text-align: center;
