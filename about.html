@@ -39,6 +39,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <link rel="canonical" href="http://www.example.com/fratellis-helados" />
     <link rel="icon" type="image/png" href="images/logo/favicon.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F47HJ2J9CW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-F47HJ2J9CW");
+    </script>
   </head>
   <body>
     <div class="loader-container">
@@ -69,8 +84,14 @@
     </div>
 
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"><img class="main-logo" src="images/logo/logo.png" loading="lazy"/></a>
-      <button class="navbar-toggler navbar-light" type="button" id="custom-toggler">
+      <a class="navbar-brand" href="#"
+        ><img class="main-logo" src="images/logo/logo.png" loading="lazy"
+      /></a>
+      <button
+        class="navbar-toggler navbar-light"
+        type="button"
+        id="custom-toggler"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -79,7 +100,9 @@
             <a class="nav-link" href="index.html">inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">nosotros<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="about.html"
+              >nosotros<span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="catering.html">catering</a>
@@ -90,7 +113,12 @@
         </ul>
       </div>
       <div class="ml-auto text-center order-btn-container">
-        <a href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa" target="_blank" class="order-btn">contacto</a>
+        <a
+          href="https://kz3kyh7lyhc.typeform.com/to/GauUJFCa"
+          target="_blank"
+          class="order-btn"
+          >contacto</a
+        >
       </div>
     </nav>
 
@@ -307,7 +335,8 @@
               loading="lazy"
             />
             <p class="footer-text">
-              Una década endulzando momentos con helado artesanal, café selecto y servicio de catering único.
+              Una década endulzando momentos con helado artesanal, café selecto
+              y servicio de catering único.
             </p>
 
             <ul class="footer-social">
@@ -426,17 +455,19 @@
       });
     </script>
 
-<script>
-  // Custom JavaScript for toggling the navbar
-  document.getElementById('custom-toggler').addEventListener('click', function() {
-      var navbarNav = document.getElementById('navbarNav');
-      if (navbarNav.classList.contains('show')) {
-          navbarNav.classList.remove('show');
-      } else {
-          navbarNav.classList.add('show');
-      }
-  });
-</script>
+    <script>
+      // Custom JavaScript for toggling the navbar
+      document
+        .getElementById("custom-toggler")
+        .addEventListener("click", function () {
+          var navbarNav = document.getElementById("navbarNav");
+          if (navbarNav.classList.contains("show")) {
+            navbarNav.classList.remove("show");
+          } else {
+            navbarNav.classList.add("show");
+          }
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
