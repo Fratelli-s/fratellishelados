@@ -152,23 +152,24 @@ h3 {
 
 .carousel-item img {
   position: absolute;
-  top: 10%;
-  left: 50%;
+  top: -10%;
+  left: 35%;
   transform: translateX(-50%); /* Centra la imagen horizontalmente */
-  max-height: 70vh; /* El 70% del alto de la ventana del navegador */
+  max-height: 80vh; /* El 70% del alto de la ventana del navegador */
   width: auto; /* Se ajustará automáticamente al ancho de la ventana */
 }
 
 .carousel-caption {
   position: absolute;
-  top: 60%;
-  left: 50%;
+  top: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center; /* Alinea el texto al centro */
+  color: #b4945c;
 }
 
 @keyframes slideUp {
