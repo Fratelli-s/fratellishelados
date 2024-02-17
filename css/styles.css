@@ -172,6 +172,41 @@ h3 {
   color: #b4945c;
 }
 
+@media (max-width: 767px) {
+  .carousel-item {
+    position: relative;
+    min-height: 50vh; /* Set a fixed minimum height for consistency */
+    background-color: #f1f2ef;
+  }
+
+  .carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 50vh; /* Adjust max-height to fit within the new container height */
+    height: auto;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    bottom: 5%; /* Position the caption at the bottom of the image */
+    font-size: 10px;
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
 p.pb-2.sabor {
   color: #333;
   font-weight: bold;
@@ -589,6 +624,16 @@ cite {
     min-height: 500px; /* Adjust based on your design needs */
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .ice-cream-image-edited {
+    background-size: contain; /* or 'cover', depending on desired effect */
+    background-position: center; /* to center the image within the div */
+    background-repeat: no-repeat; /* to prevent the image from repeating */
+    width: 100%; /* adjust the width as needed */
+    height: auto; /* maintain aspect ratio */
   }
 }
 
