@@ -172,6 +172,20 @@ h3 {
   color: #b4945c;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-item img {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Adjust duration as needed */
+  animation-fill-mode: both; /* Keeps the end state after the animation */
+}
 @media (max-width: 767px) {
   .carousel-item {
     position: relative;
@@ -199,7 +213,6 @@ h3 {
     bottom: 5%; /* Position the caption at the bottom of the image */
     font-size: 10px;
   }
-
 
   .carousel-control-prev,
   .carousel-control-next {
