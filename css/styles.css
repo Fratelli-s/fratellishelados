@@ -79,7 +79,7 @@ h3 {
   border: 1px solid #b4945c;
   background-color: white;
   color: #b4945c;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease; /* Adjust the time as needed */
 }
@@ -170,6 +170,11 @@ h3 {
   justify-content: center;
   text-align: center; /* Alinea el texto al centro */
   color: #b4945c;
+}
+
+p.pb-2.sabor {
+  color: #333;
+  font-weight: bold;
 }
 
 @keyframes slideUp {
@@ -328,8 +333,8 @@ cite {
   border: none;
 }
 
-#events .card-img-top{
-    border-radius: 15px;
+#events .card-img-top {
+  border-radius: 15px;
 }
 
 .footer {
@@ -505,7 +510,6 @@ cite {
   height: 300px;
   max-width: 300px;
   max-height: 300px;
-  border-radius: 50%;
 }
 
 .single-logo {
