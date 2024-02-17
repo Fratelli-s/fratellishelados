@@ -79,7 +79,7 @@ h3 {
   border: 1px solid #b4945c;
   background-color: white;
   color: #b4945c;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.5s ease, color 0.5s ease; /* Adjust the time as needed */
 }
@@ -170,6 +170,46 @@ h3 {
   justify-content: center;
   text-align: center; /* Alinea el texto al centro */
   color: #b4945c;
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    position: relative;
+    min-height: 50vh; /* Set a fixed minimum height for consistency */
+    background-color: #f1f2ef;
+  }
+
+  .carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 50vh; /* Adjust max-height to fit within the new container height */
+    height: auto;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 10px;
+    bottom: 5%; /* Position the caption at the bottom of the image */
+    font-size: 10px;
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+p.pb-2.sabor {
+  color: #333;
+  font-weight: bold;
 }
 
 @keyframes slideUp {
@@ -328,8 +368,8 @@ cite {
   border: none;
 }
 
-#events .card-img-top{
-    border-radius: 15px;
+#events .card-img-top {
+  border-radius: 15px;
 }
 
 .footer {
@@ -505,7 +545,6 @@ cite {
   height: 300px;
   max-width: 300px;
   max-height: 300px;
-  border-radius: 50%;
 }
 
 .single-logo {
@@ -585,6 +624,16 @@ cite {
     min-height: 500px; /* Adjust based on your design needs */
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .ice-cream-image-edited {
+    background-size: contain; /* or 'cover', depending on desired effect */
+    background-position: center; /* to center the image within the div */
+    background-repeat: no-repeat; /* to prevent the image from repeating */
+    width: 100%; /* adjust the width as needed */
+    height: auto; /* maintain aspect ratio */
   }
 }
 
